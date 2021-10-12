@@ -1,0 +1,186 @@
+# Key Tools
+AWS Services and Features:
+  Analytics:
+
+    Amazon Athena:
+      description: SQL Query over S3
+      model: Serverless
+      economics: Pay Per Query
+
+    Amazon Kinesis:
+      description: Stream Processing Video and Data
+      model: Managed
+      economics: Pay As You Go
+
+    Amazon QuickSight:
+
+      description: BI Dashboards as a Service
+      model: Platform as a service
+      economics: By Reader and Author
+
+  Application Integration:
+
+    Amazon Simple Notification System:
+
+      description: Managed push based Pub/Sub Messaging, SMS, Email, Mobile
+      model: Managed
+      economics: Per Million Requests (cheap except egress)
+
+    Amazon Simple Queue System:
+      description: Managed Pull based Queue
+      model: Managed
+      economics: Per Million Requests (cheap, except egress)
+
+  Compute and Serverless:
+
+    AWS Batch: 
+      description: Job scheduling, queueing and processing with custom compute environments
+      model: Managed
+      economics: only for resources used
+
+    Amazon EC2: 
+      description: Virtual Machines running custom images
+      model: IAAS
+      economics: very complex
+
+    AWS Elastic Beanstalk: 
+      description: Application server 
+      model: Managed
+      economics: only for resources used
+
+    AWS Lambda: 
+      description: invokation of user code triggered by events
+      model: FAAS
+      economics: requests and duration and memory
+
+    Amazon Lightsail: 
+      description: Virtual Private Server (simple website)
+      model: VPS (limited IAAS)
+      economics: monthly plans
+
+    Amazon Workspaces:
+      description: Virtual Desktops (with Office Tools)
+      model: Desktop as a Service
+      economics: 
+
+  Containers:
+
+    Amazon ECS:
+      description: Simple Containers orchestration
+      model:  managed tool over raw resources
+      economics: only for resources used
+
+    Amazon EKS:
+      description: Containers orchestrated with Kubernetes API 
+      model: managed tool over raw resources
+      economics: monthly fee and resources
+
+    Amazon Fargate:
+      description: Serverless Container Compute Engine
+      model: Managed
+      economics: cpu, memory, usage, duration
+
+  Customer Engagement:
+
+    AWS Connect:
+      description: Managed Call Center, calls, chat, tasks, etc
+      model: Software As A Service
+      economics: contact sales
+
+  Databases:
+
+    Amazon Aurora:
+      description: Managed SQL & Postgres compatible DBs
+      model: Managed
+      economics: Pay As You Go
+
+    Amazon DynamoDB:
+      description: NoSQL Key-Value & Document Database
+      model: Managed 
+      economics: read/write/throughput on demand or provisioned
+
+    Amazon ElastiCache:
+      description: Key-Value Cache (Redis or Memcache)
+      model: Managed
+      economics: one demand or reserved nodes and supporting costs
+
+    Amazon RDS:
+      description: Managed Oracle, SQL Server, Postgres, MySQL, MariaDB
+      model: Managed
+      economics: pay a you go, or reserved instances
+
+    Amazon RedShift:
+      description: Cloud Data Warehouse
+      model: Managed 
+      economics: Complex; nodes, storage, backup, and pay-as-you-go services
+
+  Developer Tools:
+
+    AWS CodeBuild:
+      description: build applications (execute command in environment)
+      model: Managed
+      economics: only for resource compute minutes
+
+    AWS CodeCommit:
+      description: git repositories
+      model: Managed
+      economics: per user per month, 5 users free
+
+    AWS CodeDeploy:
+      description: deploy to EC2, AWS Fargate, Lambda, On-Premises
+      model: Managed
+      economics: resources only in AWS, per deploy on premise
+
+    AWS CodePipeline:
+      description: pipeline execution engine
+      model: Managed
+      economics: per active pipeline per month
+
+    AWS CodeStar:
+      description: software development life cycle, uses CodeCommit, CodeBuild, CodePipeline, CodeDeploy, and Jira
+      model: Managed
+      economics: resources only
+
+  Management, Monitoring and Governance:
+
+    AWS Auto Scaling:
+      description: Scale Various resources based on utilization
+      model: Managed
+      economics: per resources
+
+    AWS Budgets:
+      description: Trigger actions based on ctual or projected spend
+      model: Managed
+      economics: per alert budget per day
+
+    AWS CloudFormation:
+      description: Declarative Infrastructure as Code
+      model: Managed
+      economics: per 3rd party handler operation
+
+    AWS CloudTrail:
+      description: user and api logging & events broken down as management or data trails
+      model: Managed
+      economics: per trails by events for management and data
+
+    AWS CloudWatch:
+      description: resource metrics, logs and events collected, visualized and acted on
+      model: Managed
+      economics: per Metrics, Dashboards, Alarms, Storage, Custom Events, Insights, Canaries/Synthetics
+
+    AWS Config:
+      description: continuously track all configuration of AWS resources, view history, create rules 
+      model: Managed
+      economics: per config items recorded, rule evaluation, and conformance packs
+
+    AWS EventBridge:
+      description: Managed EventBus with special emphasis on AWS CloudWatch
+      model: Managed
+      economics: per event published, ingested by schema discovery, or event replay
+
+  Networking and Content Delivery:
+
+  Security, Identity, and Compliance:
+
+  Storage:
+
